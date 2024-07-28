@@ -5,11 +5,11 @@ export default function SignIn() {
     <div>
       <section className="bg-white">
         <div className="lg:grid lg:min-h-screen lg:grid-cols-12">
-          <aside className="relative block h-16 lg:order-last lg:col-span-5 lg:h-full xl:col-span-6">
+          <aside className="hidden sm:block h-16 lg:order-last lg:col-span-5 lg:h-full xl:col-span-6">
             <img
               alt="login"
               src="https://i.pinimg.com/originals/de/ec/6e/deec6e477122a4af18d909a97e785997.jpg"
-              className="absolute inset-0 h-auto w-auto object-cover "
+              className="inset-0 h-auto w-auto object-cover "
             />
           </aside>
 

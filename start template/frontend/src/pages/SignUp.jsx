@@ -9,11 +9,11 @@ export default function SignUp() {
     <div>
       <section className="bg-white">
         <div className="lg:grid lg:min-h-screen lg:grid-cols-12">
-          <aside className="relative block h-16 lg:order-last lg:col-span-5 lg:h-full xl:col-span-6">
+          <aside className="hidden sm:block  order-last col-span-5 h-screen xl:col-span-6">
             <img
               alt=""
               src="https://i.pinimg.com/originals/78/7b/8c/787b8c93a84d6f54dfd1eb0a182f5914.jpg"
-              className="absolute inset-0 h-full w-full object-cover"
+              className="inset-0 h-full w-full object-cover"
             />
           </aside>
 
@@ -38,7 +38,7 @@ export default function SignUp() {
                 <form
                   action="#"
                   className="mt-8 grid grid-cols-7 gap-6 text-3xl">
-                  <div className="col-span-6  sm:col-span-6 text-center ">
+                  <div className="col-span-7 sm:col-span-6 text-center ">
                     <span className=" text-slate-400 text-xl">
                       Profile Image
                     </span>
@@ -161,8 +161,15 @@ export default function SignUp() {
                       name="password_confirmation"
                       className="mt-1 w-full rounded-md border border-gray-200 bg-white text-lg p-1 text-gray-700 shadow-sm"
                     />
+                    {passwordConfirmationError && (
+                      <div className="text-red-500 mt-2 text-sm">
+                        {passwordConfirmationError}
+                      </div>
+                    )}
                   </div>
-
+                  <div className="col-span-6 text-center">
+                    <p className="text-sm text-red-500 my-2"></p>
+                  </div>
                   <div className="col-span-6 ">
                     <p className="text-sm text-gray-500">
                       By creating an account, you agree to our
@@ -179,9 +186,7 @@ export default function SignUp() {
                   </div>
 
                   <div className="col-span-6  sm:flex sm:items-center sm:gap-4">
-                    <button
-                      className="inline-block shrink-0 rounded-md border border-gray-600 bg-gray-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-gray-600 focus:outline-none focus:ring active:text-gray-500"
-                      >
+                    <button className="inline-block shrink-0 rounded-md border border-gray-600 bg-gray-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-gray-600 focus:outline-none focus:ring active:text-gray-500">
                       Create an account
                     </button>
 
@@ -190,7 +195,7 @@ export default function SignUp() {
                       <Link
                         to="/"
                         className="text-gray-700 underline ms-2 hover:no-underline">
-                        Log in
+                        Sign In
                       </Link>
                       .
                     </p>
