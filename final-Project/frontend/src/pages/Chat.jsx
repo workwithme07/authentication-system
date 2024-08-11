@@ -5,7 +5,7 @@ export default function Chat() {
   const { user, token, logOut } = useAuth();
   return (
     <div className="text-center flex justify-center items-center h-screen flex-col">
-      <h1 className="text-3xl"> Welcome To chat Chat</h1>
+      <h1 className="text-3xl"> Welcome To chat </h1>
       {token && (
         <div className="flex flex-col items-center">
           <img

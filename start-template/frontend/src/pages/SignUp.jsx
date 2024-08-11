@@ -161,11 +161,6 @@ export default function SignUp() {
                       name="password_confirmation"
                       className="mt-1 w-full rounded-md border border-gray-200 bg-white text-lg p-1 text-gray-700 shadow-sm"
                     />
-                    {passwordConfirmationError && (
-                      <div className="text-red-500 mt-2 text-sm">
-                        {passwordConfirmationError}
-                      </div>
-                    )}
                   </div>
                   <div className="col-span-6 text-center">
                     <p className="text-sm text-red-500 my-2"></p>

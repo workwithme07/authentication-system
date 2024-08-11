@@ -58,6 +58,7 @@ export default function SignUp() {
       setOtp(true);
     } catch (error) {
       console.log(error);
+      setLoading(false);
       toast.error(error.response.data.message);
     }
   }
